@@ -66,6 +66,10 @@ type EncryptionSettings struct {
 }
 
 func Encrypt() {
+
+	var key string
+	var salt string
+
 	// Check if a local .encrypt file exists
 	if _, err := os.Stat(".encrypt"); err == nil {
 		// If it does, read the file and return the database settings
@@ -89,18 +93,29 @@ func Encrypt() {
 
 		fmt.Println("Encryption key and salt loaded from .encrypt file")
 
-		uadmin.EncryptKey = []byte(encryptionSettings.Key)
-		uadmin.Salt = encryptionSettings.Salt
+		key = encryptionSettings.Key
+		salt = encryptionSettings.Salt
 
 		defer encryptionConfigFile.Close()
 
-		// Create a .salt file
+	} else {
+
+		fmt.Println("No .encrypt file found. Getting encryption key and salt from environment variables")
+
+		key = os.Getenv("ENCRYPTIONKEY")
+		salt = os.Getenv("SALT")
+	
+		uadmin.EncryptKey = []byte(os.Getenv("KEY"))
+		uadmin.Salt = os.Getenv("SALT")
+	}
+
+	// Create a .salt file
 		saltFile, err := os.Create(".salt")
 		if err != nil {
 			panic(err)
 		}
 		// Write the salt to the file
-		_, err = saltFile.WriteString(encryptionSettings.Salt)
+		_, err = saltFile.WriteString(salt)
 		if err != nil {
 			panic(err)
 		}
@@ -115,7 +130,7 @@ func Encrypt() {
 			panic(err)
 		}
 		// Write the key to the file as bytes
-		_, err = keyFile.Write([]byte(encryptionSettings.Key))
+		_, err = keyFile.Write([]byte(key))
 		if err != nil {
 			panic(err)
 		}
@@ -124,13 +139,8 @@ func Encrypt() {
 
 		defer keyFile.Close()
 
-		return
-	}
-
-	fmt.Println("No .encrypt file found. Generating new encryption key and salt")
-
-	uadmin.EncryptKey = []byte(os.Getenv("KEY"))
-	uadmin.Salt = os.Getenv("SALT")
+		uadmin.EncryptKey = []byte(key)
+		uadmin.Salt = salt
 }
 
 func main() {
