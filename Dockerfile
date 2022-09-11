@@ -8,7 +8,9 @@ COPY . .
 ENV GO111MODULE=on
 ENV GOFLAGS=-mod=vendor
 
-CMD ["go version; go help"]
+RUN go version
+
+RUN go help
 
 RUN go mod download
 
