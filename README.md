@@ -26,12 +26,14 @@ Now all that's left is to make some changes to the code to instruct uAdmin to us
 Steps to do that:
 
 - Head over to github and clone the repository that was created for you.
-- Create a `.database` file in the root of the repository and add the following content to it:
-  - Clicking on MySQL on the railway dashboard will give you the following details:
-    ![](assets/mysql.png)  
-    - The values for the fields like `host`, `port`, `user`, `password` and `name` can be found in the above screenshot from the fields `MYSQLHOST`, `MYSQLPORT`, `MYSQLUSER`, `MYSQLPASSWORD` and `MYSQLDATABSE` respectively.
+- Clicking on MySQL on the railway dashboard will give you the following details:
+  ![](assets/mysql.png)  
+  - The values for the fields like `host`, `port`, `user`, `password` and `name` can be found in the above screenshot from the fields `MYSQLHOST`, `MYSQLPORT`, `MYSQLUSER`, `MYSQLPASSWORD` and `MYSQLDATABSE` respectively.
+- Create a `.database` file in the root of the repository and add the following content to it using the values mapped from the previous step:
   
-```json {}[.database]
+```json
+
+// .database
 {
   "type": "mysql",
   "name": "railway",
@@ -41,6 +43,7 @@ Steps to do that:
   "port": 1234
 }
 ```
+> You can test the connection to the MySQL instance by running the following command in the root of the repository locally: `go build .; ./railway` assuming you have go installed on your machine.
 
 Commit these changes to the repository and push them to github.
 
