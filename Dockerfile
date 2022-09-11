@@ -1,8 +1,16 @@
-FROM golang
+FROM golang:1.9-alpine as builder
+LABEL maintainer="Gaurav Gosain"
 
-ENV GO111MODULE=on
+RUN apk add --no-cache gcc musl-dev git
 
-RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build
+COPY go.mod go.sum ./
+
+RUN go get -d ./...
+
+COPY . .
+
+# Build the Go app
+RUN go build .
 
 # This container exposes port 8080 to the outside world
 EXPOSE 8080
