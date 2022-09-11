@@ -17,10 +17,10 @@ RUN go help
 RUN go get -u -v github.com/uadmin/uadmin/...
 
 # Build the Go app
-RUN go build .
+RUN go build ./workspace
 
 # This container exposes port 8080 to the outside world
 EXPOSE 8080
 
 # Run the executable
-CMD ["./railway"]
+CMD ["./workspace/railway"]
