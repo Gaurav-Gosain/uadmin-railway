@@ -1,4 +1,4 @@
-FROM golang:1.8-alpine
+FROM golang:latest
 LABEL maintainer="Gaurav Gosain"
 
 RUN apk add --no-cache gcc musl-dev git
