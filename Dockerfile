@@ -3,11 +3,9 @@ LABEL maintainer="Gaurav Gosain"
 
 RUN apk add --no-cache gcc musl-dev git
 
-COPY go.mod go.sum ./
+COPY . .
 
 RUN go get -d ./
-
-COPY . .
 
 # Build the Go app
 RUN go build .
