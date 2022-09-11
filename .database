@@ -1,8 +1,0 @@
-{
-  "type": "mysql",
-  "name": "railway",
-  "user": "root",
-  "password": "LZnVotKI8o0bdtXAsxtD",
-  "host": "containers-us-west-79.railway.app",
-  "port": 6652
-}
