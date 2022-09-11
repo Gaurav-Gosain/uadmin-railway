@@ -5,7 +5,7 @@ RUN apk add --no-cache gcc musl-dev git
 
 COPY . .
 
-RUN go get -d ./
+# RUN go get -d ./
 
 # Build the Go app
 RUN go build .
