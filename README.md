@@ -2,28 +2,39 @@
 
 ## This is a Test Repository to test Golang and uAdmin CI/CD using [🚅Railway](https://railway.app/)!
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/B9fy5q?referralCode=A7siyP)
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/9IP5nJ?referralCode=A7siyP)
 
 ## Steps to Deploy
 - Make sure to create a Github account and link it with [🚅Railway](https://railway.app/)
-- Click on [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/B9fy5q?referralCode=A7siyP)
+- Click [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/9IP5nJ?referralCode=A7siyP)
 
-![](assets/deploy_screen_1.png)  
+![](assets/deploy_screen_1.png)   
 
 - Give your new Repository a name (and select the visibility if you want to make it private)
 - Set the Environment Variables to the following (you can change the port as per your needs):
-  - CGO_ENABLED : `1`
-  - PORT : `8080`
-  - NIXPACKS_PKGS : `gcc`
+  - `CGO_ENABLED` : `1`
+  - `PORT` : `8080`
+  - `NIXPACKS_PKGS` : `gcc`
+  - `KEY` : `encryption key used for encrypting and decrypting the database`
+  - `SALT` : `salt used for encrypting and decrypting the database`
 - and finally click on `Deploy`
 
 ## TA-DA! 🎉 Your app is deployed!
 
-![](assets/deploy_screen_2.png)  
+- A github repository will be created with the name you gave in the previous step
+- A uadmin instance is run
+- It is hosted on a live URL (which you can find in the `Deployments` tab of your project)
+- The expected port is exposed 
+- An SSL certificate is generated
+- A MySQL database is automatically created and linked to uAdmin
+- The database is encrypted using the `KEY` and `SALT` environment variables
+  
+#### All that with a click of a button and a few environment variables!
 
-Now all that's left is to make some changes to the code to instruct uAdmin to use our custom provisioned MySQL instance hosted on Railway instead of using the defauly sqlite database (which will not be persistent) and see the changes reflected in the deployed app!
+![](assets/deploy_screen_2.png) 
+![](assets/deploy_screen_3.png)   
 
-Steps to do that:
+Finally, to setup this repository locally, you can follow the steps below:
 
 - Head over to github and clone the repository that was created for you.
 - Clicking on MySQL on the railway dashboard will give you the following details:
@@ -41,6 +52,15 @@ Steps to do that:
   "port": 1234
 }
 ```
+- Create a `.encrypt` file in the root of the repository and add the following content to it using `KEY` and `SALT` environment variables from the railway dashboard:
+  
+```json
+{
+  "KEY": "*********************",
+  "SALT": "*********************"
+}
+```
+
 > You can test the connection to the MySQL instance by running the following command in the root of the repository locally (assuming you have go installed on your machine):
 > ```shell
 > go mod download; go build .; ./railway
@@ -49,8 +69,5 @@ Steps to do that:
 Commit these changes to the repository and push them to github.
 
 ### Now for the cool part!
-Since railway automatically deploys the app whenever there is a change in the repository, you will see that a new build is triggered and the app is deployed with the changes you made!
+Since railway automatically deploys the app whenever there is a change in the repository, you will see that a new build is triggered and the app is deployed with the changes you made as soon as you push them to github!
 
-# ⚠️ Work In progress
-- Figure out a way to make the `.key` and `.salt` hidden and unique for each deployment
-- Make the `.database` file use environment variables (github secrets) or another way to hide sensitive information and still work with railway!
