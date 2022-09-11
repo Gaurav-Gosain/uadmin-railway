@@ -79,10 +79,10 @@ Finally, to setup this repository locally, you can follow the steps below:
 }
 ```
 
-> You can test the connection to the MySQL instance by running the following command in the root of the repository locally (assuming you have go installed on your machine):
-> ```shell
-> go mod download; go build .; ./railway
-> ```
+- > You can test the connection to the MySQL instance by running the following command in the root of the repository locally (assuming you have go installed on your machine):
+  > ```shell
+  > go mod download; go build .; ./railway
+  > ```
 
 Commit these changes to the repository and push them to github.
 
