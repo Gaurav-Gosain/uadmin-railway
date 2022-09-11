@@ -1,11 +1,11 @@
 # ⚠️ Work In progress
 
-## This is a Test Repository to test Golang and uAdmin CI/CD using [Railway 🚅](https://railway.app/)!
+## This is a Test Repository to test Golang and uAdmin CI/CD using [🚅Railway](https://railway.app/)!
 
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/B9fy5q?referralCode=A7siyP)
 
 ## Steps to Deploy
-- Make sure to create a Github account and link it with [Railway 🚅](https://railway.app/)
+- Make sure to create a Github account and link it with [🚅Railway](https://railway.app/)
 - Click on [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/B9fy5q?referralCode=A7siyP)
 
 ![](assets/deploy_screen_1.png)  
@@ -32,8 +32,6 @@ Steps to do that:
 - Create a `.database` file in the root of the repository and add the following content to it using the values mapped from the previous step:
   
 ```json
-
-// .database
 {
   "type": "mysql",
   "name": "railway",
@@ -43,9 +41,16 @@ Steps to do that:
   "port": 1234
 }
 ```
-> You can test the connection to the MySQL instance by running the following command in the root of the repository locally: `go build .; ./railway` assuming you have go installed on your machine.
+> You can test the connection to the MySQL instance by running the following command in the root of the repository locally (assuming you have go installed on your machine):
+> ```shell
+> go mod download; go build .; ./railway
+> ```
 
 Commit these changes to the repository and push them to github.
 
 ### Now for the cool part!
 Since railway automatically deploys the app whenever there is a change in the repository, you will see that a new build is triggered and the app is deployed with the changes you made!
+
+# ⚠️ Work In progress
+- Figure out a way to make the `.key` and `.salt` hidden and unique for each deployment
+- Make the `.database` file use environment variables (github secrets) or another way to hide sensitive information and still work with railway!
