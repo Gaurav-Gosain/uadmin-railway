@@ -8,6 +8,8 @@ COPY . .
 ENV GO111MODULE=on
 ENV GOFLAGS=-mod=vendor
 
+WORKDIR /go/delivery
+
 RUN go version
 
 RUN go help
