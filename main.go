@@ -94,8 +94,8 @@ func Encrypt() {
 		return
 	}
 
-	uadmin.EncryptKey = []byte("uadmin")
-	uadmin.Salt = "uadmin"
+	uadmin.EncryptKey = []byte(os.Getenv("KEY"))
+	uadmin.Salt = os.Getenv("SALT")
 }
 
 func main() {
