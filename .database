@@ -1,0 +1,7 @@
+{
+  "type": "mysql",
+  "name": "railway",
+  "user": "root",
+  "password": "1ACwfcCoAM5Oq8ujAvwx",
+  "host": "containers-us-west-45.railway.app"
+}
