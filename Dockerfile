@@ -5,7 +5,10 @@ RUN apk add --no-cache gcc musl-dev git
 
 COPY . .
 
-# RUN go get -d ./
+RUN go install github.com/uadmin/uadmin/...
+
+ENV GO111MODULE=on
+ENV GOFLAGS=-mod=vendor
 
 # Build the Go app
 RUN go build .
