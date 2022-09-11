@@ -91,6 +91,32 @@ func Encrypt() {
 
 		defer encryptionConfigFile.Close()
 
+		// Create a .salt file
+		saltFile, err := os.Create(".salt")
+		if err != nil {
+			panic(err)
+		}
+		// Write the salt to the file
+		_, err = saltFile.WriteString(encryptionSettings.Salt)
+		if err != nil {
+			panic(err)
+		}
+
+		defer saltFile.Close()
+
+		// Create a .key file
+		keyFile, err := os.Create(".key")
+		if err != nil {
+			panic(err)
+		}
+		// Write the key to the file as bytes
+		_, err = keyFile.Write([]byte(encryptionSettings.Key))
+		if err != nil {
+			panic(err)
+		}
+
+		defer keyFile.Close()
+
 		return
 	}
 
