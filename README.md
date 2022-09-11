@@ -61,23 +61,23 @@ Finally, to setup this repository locally, you can follow the steps below:
 - Create a `.database` file in the root of the repository and add the following content to it using the values mapped from the previous step:
   
 ```json
-{
-  "type": "mysql",
-  "name": "railway",
-  "user": "root",
-  "password": "********************",
-  "host": "*********************.railway.app",
-  "port": 1234
-}
-```
+> {
+>   "type": "mysql",
+>   "name": "railway",
+>   "user": "root",
+>   "password": "********************",
+>   "host": "*********************.railway.app",
+>   "port": 1234
+> }
+> ```
 - Create a `.encrypt` file in the root of the repository and add the following content to it using `KEY` and `SALT` environment variables from the railway dashboard:
   
-```json
-{
-  "KEY": "*********************",
-  "SALT": "*********************"
-}
-```
+> ```json
+> {
+>   "KEY": "*********************",
+>   "SALT": "*********************"
+> }
+> ```
 
 - > You can test the connection to the MySQL instance by running the following command in the root of the repository locally (assuming you have go installed on your machine):
   > ```shell
