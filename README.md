@@ -18,8 +18,8 @@
 |`CGO_ENABLED` | `1` |
 |`PORT` | `8080` |
 |`NIXPACKS_PKGS` | `gcc` |
-|`KEY` | `<` `encryption key used for encrypting and decrypting the  database` `>`
-|`SALT` | `<` `salt used for encrypting and decrypting the database` `>` |
+|`KEY` | `encryption key used for encrypting and decrypting the  database` |
+|`SALT` | `salt used for encrypting and decrypting the database` |
 - and finally click on `Deploy`
 
 ## TA-DA! 🎉 Your app is deployed!
