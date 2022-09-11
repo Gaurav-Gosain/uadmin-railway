@@ -2,6 +2,7 @@ package main
 
 import (
 	"encoding/json"
+	"fmt"
 	"io"
 	"os"
 	"strconv"
@@ -86,6 +87,8 @@ func Encrypt() {
 			panic(err)
 		}
 
+		fmt.Println("Encryption key and salt loaded from .encrypt file")
+
 		uadmin.EncryptKey = []byte(encryptionSettings.Key)
 		uadmin.Salt = encryptionSettings.Salt
 
@@ -102,6 +105,8 @@ func Encrypt() {
 			panic(err)
 		}
 
+		fmt.Println("Writing salt to .salt file")
+
 		defer saltFile.Close()
 
 		// Create a .key file
@@ -114,6 +119,8 @@ func Encrypt() {
 		if err != nil {
 			panic(err)
 		}
+
+		fmt.Println("Writing key to .key file")
 
 		defer keyFile.Close()
 
