@@ -46,11 +46,15 @@ Finally, to setup this repository locally, you can follow the steps below:
   
     ---
     >
-    > `host` &rarr; `MYSQLHOST`
-    > `port` &rarr; `MYSQLPORT`
-    > `user` &rarr; `MYSQLUSER`
-    > `password` &rarr; `MYSQLPASSWORD`
-    > `name` &rarr; `MYSQLDATABSE` 
+    > `host` &rlarr; `MYSQLHOST`
+    
+    > `port` &rlarr; `MYSQLPORT`
+    
+    > `user` &rlarr; `MYSQLUSER`
+    
+    > `password` &rlarr; `MYSQLPASSWORD`
+    
+    > `name` &rlarr; `MYSQLDATABSE` 
     >
     ---
 
