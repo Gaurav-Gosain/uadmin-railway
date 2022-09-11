@@ -3,10 +3,12 @@ LABEL maintainer="Gaurav Gosain"
 
 RUN apk add --no-cache gcc musl-dev git
 
-# Copy everything from the current directory to the PWD (Present Working Directory) inside the container
-COPY . .
+WORKDIR /app/server
+COPY go.mod .
+COPY go.sum .
 
-RUN go get -u -v github.com/uadmin/uadmin/...
+RUN go mod download
+COPY . .
 
 # Build the Go app
 RUN go build -v .
