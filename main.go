@@ -127,6 +127,8 @@ func Encrypt() {
 		return
 	}
 
+	fmt.Println("No .encrypt file found. Generating new encryption key and salt")
+
 	uadmin.EncryptKey = []byte(os.Getenv("KEY"))
 	uadmin.Salt = os.Getenv("SALT")
 }
