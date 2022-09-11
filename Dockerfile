@@ -3,8 +3,8 @@ LABEL maintainer="Gaurav Gosain"
 
 RUN apk add --no-cache gcc musl-dev
 
-RUN go mod download
-RUN go build .
-EXPOSE 8080
+# RUN go mod download
+# RUN go build .
+# EXPOSE 8080
 
-CMD [ "./railway" ]
+# CMD [ "./railway" ]
