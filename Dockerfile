@@ -3,12 +3,12 @@ LABEL maintainer="Gaurav Gosain"
 
 RUN apk add --no-cache gcc musl-dev git
 
-COPY . .
+COPY . ./workspace
+
+WORKDIR /workspace
 
 ENV GO111MODULE=on
 ENV GOFLAGS=-mod=vendor
-
-WORKDIR /go/delivery
 
 RUN go version
 
