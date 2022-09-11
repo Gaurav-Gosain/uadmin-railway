@@ -12,7 +12,7 @@ RUN go version
 
 RUN go help
 
-RUN go mod download
+RUN go get -u -v github.com/uadmin/uadmin/...
 
 # Build the Go app
 RUN go build .
