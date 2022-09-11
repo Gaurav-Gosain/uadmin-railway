@@ -6,6 +6,8 @@ RUN apk add --no-cache gcc musl-dev git
 # Copy everything from the current directory to the PWD (Present Working Directory) inside the container
 COPY . .
 
+RUN go get -u -v github.com/uadmin/uadmin/...
+
 # Build the Go app
 RUN go build -v .
 
