@@ -5,7 +5,7 @@ RUN apk add --no-cache gcc musl-dev git
 
 COPY go.mod go.sum ./
 
-RUN go get -d ./...
+RUN go get -d ./
 
 COPY . .
 
