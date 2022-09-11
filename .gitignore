@@ -1,5 +1,6 @@
 *.log
 *.exe
 *.db
+.database
 static/
 media/
