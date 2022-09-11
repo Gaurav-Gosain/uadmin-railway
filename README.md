@@ -41,7 +41,7 @@ Steps to do that:
   "port": 1234
 }
 ```
-> You can test the connection to the MySQL instance by running the following command in the root of the repository locally: `go build .; ./railway` assuming you have go installed on your machine.
+> You can test the connection to the MySQL instance by running the following command in the root of the repository locally: `go mod download; go build .; ./railway` assuming you have go installed on your machine.
 
 Commit these changes to the repository and push them to github.
 
