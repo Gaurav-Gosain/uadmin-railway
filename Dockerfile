@@ -8,6 +8,8 @@ COPY . .
 ENV GO111MODULE=on
 ENV GOFLAGS=-mod=vendor
 
+CMD ["go version; go help"]
+
 RUN go mod download
 
 # Build the Go app
