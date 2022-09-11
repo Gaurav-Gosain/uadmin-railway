@@ -1,11 +1,11 @@
-FROM golang:1.9-alpine as builder
+FROM golang:1.8-alpine
 LABEL maintainer="Gaurav Gosain"
 
 RUN apk add --no-cache gcc musl-dev git
 
 COPY . .
 
-ENV GO111MODULE=off
+ENV GO111MODULE=on
 ENV GOFLAGS=-mod=vendor
 
 RUN go mod download
