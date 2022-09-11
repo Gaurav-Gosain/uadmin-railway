@@ -2,5 +2,6 @@
 *.exe
 *.db
 .database
+.encrypt
 static/
 media/

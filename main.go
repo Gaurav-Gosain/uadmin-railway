@@ -59,9 +59,52 @@ func InitDatabase() *uadmin.DBSettings {
 	}
 }
 
+type EncryptionSettings struct {
+	Key  string `json:"KEY"`
+	Salt string `json:"SALT"`
+}
+
+func Encrypt() {
+	// Check if a local .encrypt file exists
+	if _, err := os.Stat(".encrypt"); err == nil {
+		// If it does, read the file and return the database settings
+
+		// Step 1: Open the file
+		encryptionConfigFile, err := os.Open(".encrypt")
+		if err != nil {
+			panic(err)
+		}
+
+		byteValue, _ := io.ReadAll(encryptionConfigFile)
+
+		// Step 2: Unmarshal the file
+		var encryptionSettings EncryptionSettings
+
+		err = json.Unmarshal(byteValue, &encryptionSettings)
+
+		if err != nil {
+			panic(err)
+		}
+
+		uadmin.EncryptKey = []byte(encryptionSettings.Key)
+		uadmin.Salt = encryptionSettings.Salt
+
+		defer encryptionConfigFile.Close()
+
+		return
+	}
+
+	uadmin.EncryptKey = []byte("uadmin")
+	uadmin.Salt = "uadmin"
+}
+
 func main() {
 
+	// Initialize the database
 	uadmin.Database = InitDatabase()
+	// Set the encryption key and salt
+	Encrypt()
 
+	// Start the default uadmin server (at port 8080)
 	uadmin.StartServer()
 }
