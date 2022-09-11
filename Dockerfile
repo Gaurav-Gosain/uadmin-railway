@@ -8,7 +8,7 @@ COPY . .
 ENV GO111MODULE=off
 ENV GOFLAGS=-mod=vendor
 
-RUN go get -u -v github.com/uadmin/uadmin/...
+RUN go mod download
 
 # Build the Go app
 RUN go build .
