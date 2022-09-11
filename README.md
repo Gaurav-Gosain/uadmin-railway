@@ -32,8 +32,6 @@ Steps to do that:
 - Create a `.database` file in the root of the repository and add the following content to it using the values mapped from the previous step:
   
 ```json
-
-// .database
 {
   "type": "mysql",
   "name": "railway",
@@ -49,3 +47,7 @@ Commit these changes to the repository and push them to github.
 
 ### Now for the cool part!
 Since railway automatically deploys the app whenever there is a change in the repository, you will see that a new build is triggered and the app is deployed with the changes you made!
+
+# ⚠️ Work In progress
+- Figure out a way to make the `.key` and `.salt` hidden and unique for each deployment
+- Make the `.database` file use environment variables (github secrets) or another way to hide sensitive information and still work with railway!
