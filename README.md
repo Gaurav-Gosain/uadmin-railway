@@ -38,7 +38,7 @@ Steps to do that:
   "user": "root",
   "password": "********************",
   "host": "*********************.railway.app",
-  "port": 0000
+  "port": 1234
 }
 ```
 
