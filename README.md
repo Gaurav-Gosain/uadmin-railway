@@ -89,3 +89,9 @@ Commit these changes to the repository and push them to github.
 ### Now for the cool part!
 Since railway automatically deploys the app whenever there is a change in the repository, you will see that a new build is triggered and the app is deployed with the changes you made as soon as you push them to github!
 
+
+To fix:
+
+```cpp
+[  ERROR ]   Hanlder.NewLogger. Unix syslog delivery error
+```
