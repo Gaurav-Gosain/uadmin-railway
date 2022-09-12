@@ -37,7 +37,7 @@
 - A MySQL database is automatically created and linked to uAdmin
 - The database is encrypted using the `KEY` and `SALT` environment variables
   
-#### All that with a click of a button and a few environment variables!
+### All that with a click of a button and a few environment variables!
 
 ![](assets/deploy_screen_2.png) 
 ![](assets/deploy_screen_3.png)   
