@@ -146,6 +146,16 @@ func Encrypt() {
 func Init() {
 	// Initialize the database
 	uadmin.Database = InitDatabase()
+
+	//! Temporary workaround for:
+	// [  ERROR ]   Hanlder.NewLogger. Unix syslog delivery error
+	uadmin.LogTrail = false
+	uadmin.LogHTTPRequests = false
+	uadmin.LogRead = false
+	uadmin.LogAdd = false
+	uadmin.LogDelete = false
+	uadmin.LogEdit = false
+
 	// Set the encryption key and salt
 	Encrypt()
 }
