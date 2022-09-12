@@ -95,3 +95,6 @@ To fix:
 ```jsx
 [  ERROR ]   Hanlder.NewLogger. Unix syslog delivery error
 ```
+
+> Update on the above error: The issue is solved in HEAD and will be releases in a new version with the update. (~Internal Sources 👀)
+
