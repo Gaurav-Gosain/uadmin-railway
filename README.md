@@ -1,4 +1,4 @@
-# Golang and uAdmin CI/CD using [🚅Railway](https://railway.app/)!
+# Golang and [uAdmin](https://github.com/uadmin/uadmin) CI/CD using [🚅Railway](https://railway.app/)!
 
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/9IP5nJ?referralCode=A7siyP)
 
