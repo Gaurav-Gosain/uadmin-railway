@@ -13,13 +13,14 @@
 - Give your new Repository a name (and select the visibility if you want to make it private)
 - Set the Environment Variables to the following (you can change the port as per your needs):
 
-| env variable | Value |
-| :---: | --- |
-|`CGO_ENABLED` | `1` |
-|`PORT` | `8080` |
-|`NIXPACKS_PKGS` | `gcc` |
-|`KEY` | `encryption key used for encrypting and decrypting the  database` |
-|`SALT` | `salt used for encrypting and decrypting the database` |
+| env variable   |                               Value                               |
+| :------------: | ----------------------------------------------------------------- |
+|`CGO_ENABLED`   | `1`                                                               |
+|`PORT`          |  `8080`                                                           |
+|`NIXPACKS_PKGS` | `gcc`                                                             |
+|`KEY`           | `encryption key used for encrypting and decrypting the  database` |
+|`SALT`          | `salt used for encrypting and decrypting the database`            |
+
 - and finally click on `Deploy`
 
 ## TA-DA! 🎉 Your app is deployed!
