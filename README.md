@@ -49,8 +49,6 @@ Finally, to setup this repository locally, you can follow the steps below:
   ![](assets/mysql.png)  
   - The values for the fields like `host`, `port`, `user`, `password` and `name` can be found in the above screenshot from the fields `MYSQLHOST`, `MYSQLPORT`, `MYSQLUSER`, `MYSQLPASSWORD` and `MYSQLDATABSE` respectively.
   
->
-
 > `host` ⇄ `MYSQLHOST`
 
 > `port` ⇄ `MYSQLPORT`
@@ -60,8 +58,6 @@ Finally, to setup this repository locally, you can follow the steps below:
 > `password` ⇄ `MYSQLPASSWORD`
 
 > `name` ⇄ `MYSQLDATABSE` 
-
->
 
 - Create a `.database` file in the root of the repository and add the following content to it using the values mapped from the previous step:
   
