@@ -11,8 +11,6 @@
 - Give your new Repository a name (and select the visibility if you want to make it private)
 - Set the Environment Variables to the following (you can change the port as per your needs):
 
----
-
 |                               Value                               | env variable   |
 | :---------------------------------------------------------------: | -------------- |
 | `1`                                                               |`CGO_ENABLED`   |
@@ -20,8 +18,6 @@
 | `gcc`                                                             |`NIXPACKS_PKGS` |
 | `encryption key used for encrypting and decrypting the  database` |`KEY`           |
 | `salt used for encrypting and decrypting the database`            |`SALT`          |
-
----
 
 - and finally click on `Deploy`
 
