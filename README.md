@@ -14,7 +14,7 @@
 - Set the Environment Variables to the following (you can change the port as per your needs):
 
 | env variable   |                               Value                               |
-| :------------: | :---------------------------------------------------------------: |
+| -------------- | :---------------------------------------------------------------: |
 |`CGO_ENABLED`   | `1`                                                               |
 |`PORT`          |  `8080`                                                           |
 |`NIXPACKS_PKGS` | `gcc`                                                             |
