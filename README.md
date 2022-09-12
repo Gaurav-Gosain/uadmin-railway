@@ -14,7 +14,7 @@
 - Set the Environment Variables to the following (you can change the port as per your needs):
 
 | env variable   |                               Value                               |
-| :------------: | ----------------------------------------------------------------- |
+| :------------: | :---------------------------------------------------------------: |
 |`CGO_ENABLED`   | `1`                                                               |
 |`PORT`          |  `8080`                                                           |
 |`NIXPACKS_PKGS` | `gcc`                                                             |
@@ -47,15 +47,15 @@ Finally, to setup this repository locally, you can follow the steps below:
   
     ---
     >
-    > `host` &rlarr; `MYSQLHOST`
+    > `host` ⇄ `MYSQLHOST`
     
-    > `port` &rlarr; `MYSQLPORT`
+    > `port` ⇄ `MYSQLPORT`
     
-    > `user` &rlarr; `MYSQLUSER`
+    > `user` ⇄ `MYSQLUSER`
     
-    > `password` &rlarr; `MYSQLPASSWORD`
+    > `password` ⇄ `MYSQLPASSWORD`
     
-    > `name` &rlarr; `MYSQLDATABSE` 
+    > `name` ⇄ `MYSQLDATABSE` 
     >
     ---
 
@@ -80,7 +80,7 @@ Finally, to setup this repository locally, you can follow the steps below:
 }
 ```
 
-- > You can test the connection to the MySQL instance by running the following command in the root of the repository locally (assuming you have go installed on your machine):
+> You can test the connection to the MySQL instance by running the following command in the root of the repository locally (assuming you have go installed on your machine):
   > ```shell
   > go mod download; go build .; ./railway
   > ```
