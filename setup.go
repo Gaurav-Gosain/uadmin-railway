@@ -155,6 +155,7 @@ func Init() {
 	uadmin.LogAdd = false
 	uadmin.LogDelete = false
 	uadmin.LogEdit = false
+	uadmin.TrailLoggingLevel = uadmin.WORKING
 
 	// Set the encryption key and salt
 	Encrypt()
