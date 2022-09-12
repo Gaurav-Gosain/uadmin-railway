@@ -92,6 +92,6 @@ Since railway automatically deploys the app whenever there is a change in the re
 
 To fix:
 
-```cpp
+```jsx
 [  ERROR ]   Hanlder.NewLogger. Unix syslog delivery error
 ```
