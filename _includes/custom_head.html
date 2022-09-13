@@ -17,10 +17,13 @@
 </div>
 
 <style>
-  html[data-theme="dark"]>.gh-logo {
-    filter: invert(1);
+  :root[data-theme="dark"] {
+    --logo-filter: 1;
   }
-  html[data-theme="light"]>.gh-logo {
-    filter: invert(0);
+  :root[data-theme="light"] > .gh-logo {
+    --logo-filter: 0;
+  }
+  .gh-logo {
+    filter: invert(var(--logo-filter));
   }
 </style>
