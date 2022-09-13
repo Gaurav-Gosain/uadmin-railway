@@ -93,3 +93,28 @@ To fix:
 
 > Update on the above error: The issue is solved in HEAD and will be releases in a new version with the update. (~Internal Sources 👀)
 
+## About me
+
+[![GitHub WidgetBox](https://github-widgetbox.vercel.app/api/profile?username=Gaurav-Gosain&data=followers,repositories,stars,commits)](https://github.com/Gaurav-Gosain)
+
+## Website Page Speed
+
+![Metrics](https://metrics.lecoq.io/gaurav-gosain?template=classic&base.header=0&base.activity=0&base.community=0&base.repositories=0&base.metadata=0&pagespeed=1&base=header%2C%20activity%2C%20community%2C%20repositories%2C%20metadata&base.indepth=false&base.hireable=false&base.skip=false&pagespeed=false&pagespeed.url=https%3A%2F%2Fgaurav-gosain.github.io%2Fuadmin-railway%2F&pagespeed.detailed=true&pagespeed.screenshot=true&pagespeed.pwa=true&config.timezone=Asia%2FDubai)
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=Gaurav-Gosain/uadmin-railway&type=Date)](https://star-history.com/#Gaurav-Gosain/uadmin-railway&Date)
+
+<div style="display:flex;flex-wrap:wrap;">
+  <img alt="GitHub Language Count" src="https://img.shields.io/github/languages/count/Gaurav-Gosain/uadmin-railway" style="padding:5px;margin:5px;" />
+  <img alt="GitHub Top Language" src="https://img.shields.io/github/languages/top/Gaurav-Gosain/uadmin-railway" style="padding:5px;margin:5px;" />
+  <img alt="" src="https://img.shields.io/github/repo-size/Gaurav-Gosain/uadmin-railway" style="padding:5px;margin:5px;" />
+  <img alt="GitHub Issues" src="https://img.shields.io/github/issues/Gaurav-Gosain/uadmin-railway" style="padding:5px;margin:5px;" />
+  <img alt="GitHub Closed Issues" src="https://img.shields.io/github/issues-closed/Gaurav-Gosain/uadmin-railway" style="padding:5px;margin:5px;" />
+  <img alt="GitHub Pull Requests" src="https://img.shields.io/github/issues-pr/Gaurav-Gosain/uadmin-railway" style="padding:5px;margin:5px;" />
+  <img alt="GitHub Closed Pull Requests" src="https://img.shields.io/github/issues-pr-closed/Gaurav-Gosain/uadmin-railway" style="padding:5px;margin:5px;" />
+  <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/Gaurav-Gosain/uadmin-railway" style="padding:5px;margin:5px;" />
+  <img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/Gaurav-Gosain/uadmin-railway" style="padding:5px;margin:5px;" />
+  <img alt="GitHub Commit Activity (Week)" src="https://img.shields.io/github/commit-activity/w/Gaurav-Gosain/uadmin-railway" style="padding:5px;margin:5px;" />
+<div>
+
