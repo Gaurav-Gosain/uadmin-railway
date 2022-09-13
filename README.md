@@ -105,16 +105,16 @@ To fix:
 
 [![Star History Chart](https://api.star-history.com/svg?repos=Gaurav-Gosain/uadmin-railway&type=Date)](https://star-history.com/#Gaurav-Gosain/uadmin-railway&Date)
 
-<div style="display:flex;flex-wrap:wrap;padding:5px;margin:5px;">
-  <img alt="GitHub Language Count" src="https://img.shields.io/github/languages/count/Gaurav-Gosain/uadmin-railway" />
-  <img alt="GitHub Top Language" src="https://img.shields.io/github/languages/top/Gaurav-Gosain/uadmin-railway" />
-  <img alt="" src="https://img.shields.io/github/repo-size/Gaurav-Gosain/uadmin-railway" />
-  <img alt="GitHub Issues" src="https://img.shields.io/github/issues/Gaurav-Gosain/uadmin-railway" />
-  <img alt="GitHub Closed Issues" src="https://img.shields.io/github/issues-closed/Gaurav-Gosain/uadmin-railway" />
-  <img alt="GitHub Pull Requests" src="https://img.shields.io/github/issues-pr/Gaurav-Gosain/uadmin-railway" />
-  <img alt="GitHub Closed Pull Requests" src="https://img.shields.io/github/issues-pr-closed/Gaurav-Gosain/uadmin-railway" />
-  <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/Gaurav-Gosain/uadmin-railway" />
-  <img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/Gaurav-Gosain/uadmin-railway" />
-  <img alt="GitHub Commit Activity (Week)" src="https://img.shields.io/github/commit-activity/w/Gaurav-Gosain/uadmin-railway" />
+<div style="display:flex;flex-wrap:wrap;">
+  <img alt="GitHub Language Count" src="https://img.shields.io/github/languages/count/Gaurav-Gosain/uadmin-railway" style="padding:5px;margin:5px; />
+  <img alt="GitHub Top Language" src="https://img.shields.io/github/languages/top/Gaurav-Gosain/uadmin-railway" style="padding:5px;margin:5px; />
+  <img alt="" src="https://img.shields.io/github/repo-size/Gaurav-Gosain/uadmin-railway" style="padding:5px;margin:5px; />
+  <img alt="GitHub Issues" src="https://img.shields.io/github/issues/Gaurav-Gosain/uadmin-railway" style="padding:5px;margin:5px; />
+  <img alt="GitHub Closed Issues" src="https://img.shields.io/github/issues-closed/Gaurav-Gosain/uadmin-railway" style="padding:5px;margin:5px; />
+  <img alt="GitHub Pull Requests" src="https://img.shields.io/github/issues-pr/Gaurav-Gosain/uadmin-railway" style="padding:5px;margin:5px; />
+  <img alt="GitHub Closed Pull Requests" src="https://img.shields.io/github/issues-pr-closed/Gaurav-Gosain/uadmin-railway" style="padding:5px;margin:5px; />
+  <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/Gaurav-Gosain/uadmin-railway" style="padding:5px;margin:5px; />
+  <img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/Gaurav-Gosain/uadmin-railway" style="padding:5px;margin:5px; />
+  <img alt="GitHub Commit Activity (Week)" src="https://img.shields.io/github/commit-activity/w/Gaurav-Gosain/uadmin-railway" style="padding:5px;margin:5px; />
 <div>
 
