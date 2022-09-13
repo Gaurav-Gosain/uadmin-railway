@@ -105,7 +105,7 @@ To fix:
 
 [![Star History Chart](https://api.star-history.com/svg?repos=Gaurav-Gosain/uadmin-railway&type=Date)](https://star-history.com/#Gaurav-Gosain/uadmin-railway&Date)
 
-<div>
+<div style="display:flex;flex-wrap:wrap;">
   <img alt="GitHub Language Count" src="https://img.shields.io/github/languages/count/Gaurav-Gosain/uadmin-railway" />
   <img alt="GitHub Top Language" src="https://img.shields.io/github/languages/top/Gaurav-Gosain/uadmin-railway" />
   <img alt="" src="https://img.shields.io/github/repo-size/Gaurav-Gosain/uadmin-railway" />
