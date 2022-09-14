@@ -19,6 +19,8 @@
 | `encryption key used for encrypting and decrypting the  database` |`KEY`           |
 | `salt used for encrypting and decrypting the database`            |`SALT`          |
 
+> NOTE: The `PORT` value here needs to match the port where uAdmin is exposed to (the default value is `8080` and I recommend not changing it unless necessary)
+
 - and finally click on `Deploy`
 
 ## TA-DA! 🎉 Your app is deployed!
