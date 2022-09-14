@@ -97,7 +97,7 @@ To fix:
 
 ## About me
 
-[![GitHub WidgetBox](https://github-widgetbox.vercel.app/api/profile?username=Gaurav-Gosain&data=followers,repositories,stars,commits)](https://github.com/Gaurav-Gosain)
+[![GH WidgetBox](https://gh-widgetbox.vercel.app/api/profile?username=Gaurav-Gosain&data=followers,repositories,stars,commits)](https://github.com/Gaurav-Gosain)
 
 <!-- ## Website Page Speed -->
 
