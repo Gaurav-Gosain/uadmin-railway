@@ -7,4 +7,4 @@ theme_config:
   appearance_toggle: true # if appearance can be switched by user
   show_navbar: false
   show_footer: false
-  show_copyright: true
+  show_copyright: false
