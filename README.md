@@ -19,6 +19,8 @@
 | `encryption key used for encrypting and decrypting the  database` |`KEY`           |
 | `salt used for encrypting and decrypting the database`            |`SALT`          |
 
+> NOTE: The `PORT` value here needs to match the port where uAdmin is exposed to (the default value is `8080` and I recommend not changing it unless necessary)
+
 - and finally click on `Deploy`
 
 ## TA-DA! 🎉 Your app is deployed!
@@ -95,11 +97,11 @@ To fix:
 
 ## About me
 
-[![GitHub WidgetBox](https://github-widgetbox.vercel.app/api/profile?username=Gaurav-Gosain&data=followers,repositories,stars,commits)](https://github.com/Gaurav-Gosain)
+[![GH WidgetBox](https://gh-widgetbox.vercel.app/api/profile?username=Gaurav-Gosain&data=followers,repositories,stars,commits)](https://github.com/Gaurav-Gosain)
 
-## Website Page Speed
+<!-- ## Website Page Speed -->
 
-![Metrics](https://metrics.lecoq.io/gaurav-gosain?template=classic&base.header=0&base.activity=0&base.community=0&base.repositories=0&base.metadata=0&pagespeed=1&base=header%2C%20activity%2C%20community%2C%20repositories%2C%20metadata&base.indepth=false&base.hireable=false&base.skip=false&pagespeed=false&pagespeed.url=https%3A%2F%2Fgaurav-gosain.github.io%2Fuadmin-railway%2F&pagespeed.detailed=true&pagespeed.screenshot=true&pagespeed.pwa=true&config.timezone=Asia%2FDubai)
+<!-- ![Metrics](https://metrics.lecoq.io/gaurav-gosain?template=classic&base.header=0&base.activity=0&base.community=0&base.repositories=0&base.metadata=0&pagespeed=1&base=header%2C%20activity%2C%20community%2C%20repositories%2C%20metadata&base.indepth=false&base.hireable=false&base.skip=false&pagespeed=false&pagespeed.url=https%3A%2F%2Fgaurav-gosain.github.io%2Fuadmin-railway%2F&pagespeed.detailed=true&pagespeed.screenshot=true&pagespeed.pwa=true&config.timezone=Asia%2FDubai) -->
 
 ## Star History
 
