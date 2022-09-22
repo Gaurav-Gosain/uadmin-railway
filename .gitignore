@@ -3,5 +3,7 @@
 *.db
 .database
 .encrypt
+.key
+.salt
 static/
 media/
